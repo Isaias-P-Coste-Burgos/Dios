@@ -3,52 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página de Inicio</title>
-    <link rel="stylesheet" href="css/ok.css"> 
+    <title>El hormiguero: Tienda de Hormigas Online</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  
     <header>
+        <div class="logo">
+            <img src="img/10000739.webp" alt="">
+            <span>El hormiguero</span>
+        </div>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="Hormiguero.html">Hormigueros</a></li>
+                <li><a href="alimentos.html">Alimentos</a></li>
+                <li><a href="hormiga.html">Hormigas</a></li>
+                <li><a href="">Contacto</a></li>
+          
             </ul>
         </nav>
+        
     </header>
 
-   
     <main>
-       
-        <section id="inicio">
-            <h1>Bienvenido a Nuestra Página</h1>
+        <section class="contenido-principal">
+            <div class="texto">
+                <h1 id="typewriter">El hormiguero <br> es una Tienda de hormigas online</h1>
+                <h3>Venta de productos especializados en la cría de hormigas</h3>
+                <p><strong>Tienda de hormigas</strong> especializada en su cría. Aquí encontrarás todo lo que necesitas para disfrutar al máximo de esta actividad. Entra y elige el modelo de <strong>hormiguero</strong> que más se ajuste a tus preferencias, así como el resto de <strong>accesorios</strong> que te ayuden a cubrir todas las necesidades de tus hormigas.</p>
+            </div>
+            <div class="imagen">
+                <img src="img/fondo-home.jpg" alt="Hormigas trabajando">
+            </div>
+        </section>
+        <section class="categories">
+    <div class="category">
+        <img src="img/hormiquero-catelogo.jpg" alt="Hormigueros">
+        <p>Hormigueros</p>
+    </div>
+    <div class="category">
+        <img src="img/hormiga-catalogo.jpg" alt="Hormiga">
+        <p>HormigaS</p>
+    </div>
+    <div class="category">
+        <img src="img/semillas-catalogo.jpg" alt="Alimentos">
+        <p>Alimentos</p>
+    </div>
+    <div class="category">
+        <img src="img/ficha-catalogo.jpg" alt="Fichas de cría">
+        <p>Fichas de cría</p>
+    </div>
+</section>
+
+    <hr>
+        <section class="latest-products">
+            <h2>Nuevos productos</h2>
+            <div class="product">
+                <img src="img/img-producto/homeant.jpg" alt="Antbox 15x15x12">
+                <h3> Hormiguero basico</h3>
+                <p>30,00 $ (ITEBIS incl.)</p>
+                <p class="out-of-stock">NUEVO</p>
+                <a href="Hormiguero.html">Ver producto</a>
+            </div>
+         <div class="product">
+                <img src="img/img-producto/r.webp" alt="Reina Messor barbarus">
+                <h3>Reina Messor barbarus</h3>
+                <p> 0,50 $ (ITEBIS incl.)</p>
+                <p class="out-of-stock">NUEVO</p>
+                <a href="hormiga.html">Ver producto</a>
+            </div>
+            <div class="product">
+                <img src="img/img-producto/ouse.jpg" alt="Bloques de construcción (insectos)">
+                <h3>Mix de semilla 50g</h3>
+                <p>1,00 $ (ITEBIS incl.)</p>
+                <p class="out-of-stock">NUEVO</p>
+                <a href="alimentos.html">Ver producto</a>
+            </div>
+            <div class="product">
+                <img src="img/img-producto/e.jpg" alt="Figuras de hormiga">
+                <h3>Hormiguero - Tipo Seta</h3>
+                <p>15,00 $ (ITEBIS incl.)</p>
+                <p class="out-of-stock">NUEVO</p>
+                <a href="Hormiguero.html">Ver producto</a>
+            </div>
+        </section>
+
+        <section id="nosotros">
+        <div class="contenido">
+            <h2>Nosotros</h2>
+            <p>Somos una tienda especializada en hormigas y todo tipo de productos relacionados con su cría.</p>
+            <p>Disponemos de una gran variedad de hormigueros adaptados a las necesidades de las diferentes especies de hormigas que podemos encontrar en la península. Pídenos asesoramiento y te aconsejaremos sobre cuáles son los mejores cuidados que le puedes dar a tu colonia, cuál es el hormiguero que mejor se adapta a ella y cuáles son los posibles accesorios que te ayudarán con su cría.</p>
+        </div>
+        <div class="imagen">
+            <img src="img/nosotro.jpeg" alt="Hormigas sobre hoja">
             
-        </section>
-
-       
-        <section id="sobre-nosotros">
-            <h2>Sobre Nosotros</h2>
-            
-        </section>
-
-       
-        <section id="servicios">
-            <h2>Servicios</h2>
-           
-        </section>
-
-        
-        <section id="contacto">
-            <h2>Contacto</h2>
-           
-        </section>
-    </main>
-
+        </div>
+    </section>
    
-    <footer>
-        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
-    </footer>
+
+<section class="info-section">
+    <div class="card">
+        <i class="fas fa-lock"></i>
+        <h2>Pagos seguros</h2>
+        <p>Las compras en nuestra tienda online son completamente seguras. Tus datos personales y bancarios quedan protegidos en todo momento.</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-tag"></i>
+        <h2>Mejores precios</h2>
+        <p>Nos esforzamos para ofrecer los mejores productos al mejor precio.</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-comments"></i>
+        <h2>Atención al cliente</h2>
+        <p>Te ofrecemos atención personalizada antes, durante y después de tu compra mediante nuestro chat online.</p>
+    </div>
+</section>
+
+    </main>
+      <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Columna 1: Redes sociales + texto legal -->
+      <div class="footer-col">
+        <div class="social-icons">
+          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p> El hormiguero © Copyright 2025. Diseño web realizado por IPCB Estudio</p>
+      </div>
+
+      <!-- Columna 2: Contacto -->
+      <div class="footer-col contact">
+        <p><i class="fas fa-phone-alt"></i> 849-375-0619</p>
+        <p><i class="fas fa-envelope"></i> costepatricio@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> San Fracisco de Macorís (Republica Dominicana)</p>
+      </div>
+
+      <!-- Columna 3: Enlaces -->
+      <div class="footer-col links">
+        <a href="#">Envíos y Devoluciones</a>
+        <a href="#">Pago seguro</a>
+        <a href="#">Aviso legal</a>
+        <a href="#">Política de cookies</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Declaración de accesibilidad</a>
+        <a href="#">Mapa del sitio</a>
+      </div>
+
+    <!-- Botón Ir arriba -->
+    <div class="go-top">
+      <a href="#top"><i class="fas fa-arrow-up"></i> Ir arriba</a>
+    </div>
+  </footer>
+  <script>
+    const text = "El hormiguero es una Tienda de hormigas online";
+    const target = document.getElementById("typewriter");
+    target.innerHTML = ""; // Limpia el contenido inicial
+
+    let i = 0;
+    const speed = 60; // Velocidad de escritura
+
+    function typeWriter() {
+        if (i < text.length) {
+            target.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+    window.addEventListener("load", typeWriter);
+</script>
+
 </body>
 </html>

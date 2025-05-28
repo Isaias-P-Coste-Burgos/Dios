@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/login.css">
 </head>
+
 <body>
-    <h1>  </h1>
+    <div class="wrapper">
+        <div class="form-header">
+            <div class="titles">
+                <div class="title-register">Registro</div>
+            </div>
+        </div>
+
+        <!-- registro form -->
+            <form action="#" class="register-form" autocomplete="off">
+            <div class="input-box">
+                <input type="text" class="input-field" id="reg-name" required>
+                <label for="reg-name" class="label">Nombre</label>
+                <i class='bx bx-user icon'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" id="reg-email" required>
+                <label for="reg-email" class="label">Correo</label>
+                <i class='bx bx-envelope icon'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" id="reg-pass" required>
+                <label for="reg-pass" class="label">Contraseña</label>
+                <i class='bx bx-lock-alt icon'></i>
+            </div>
+            <div class="form-cols">
+                <div class="col-1">
+                    <input type="checkbox" id="agree">
+                    <label for="agree">Acepto los Terminos y Condicciones</label>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="input-box">
+                <button class="btn-submit" id="signUpBtn"> Aceptar <i class='bx bx-cloud-upload' ></i></button>
+            </div>
+            <div class="switch-form">
+                <span>¿Ya tiene una cuenta <a href="login.html">login?</a></span>
+            </div>
+        </form> 
+    </diV>
+   <script>
+  document.getElementById('signUpBtn').addEventListener('click', function(e) {
+    e.preventDefault(); // Evita el envío automático
+
+    const nombre = document.getElementById('reg-name').value.trim();
+    const correo = document.getElementById('reg-email').value.trim();
+    const contrasena = document.getElementById('reg-pass').value.trim();
+    const acepto = document.getElementById('agree').checked;
+
+    if (!nombre || !correo || !contrasena) {
+      alert("todos los campos son obligatorios.");
+      return;   
+    }
+
+    if (!acepto) {
+      alert("Debes aceptar los Términos y Condiciones.");
+      return;
+    }
+
+    alert("Registro exitoso. Redirigiendo al inicio...");
+    window.location.href = "login.html";
+  });
+</script>
+
 </body>
+
 </html>
