@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contáctanos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        :root {
+            --primary: #619b1f;
+            --primary-light: #0d0d0e;
+            --secondary: #1a1a2e;
+            --secondary-light: #2a2a3e;
+            --text-color: #333;
+            --text-light: #555;
+            --background: #f5f7fa;
+            --white: #ffffff;
+            --border-radius: 12px;
+            --border-radius-sm: 8px;
+            --font-family: 'Poppins', sans-serif;
+            --box-shadow: 0 10px 30px rgba(67, 97, 238, 0.15);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background: var(--background);
+            color: var(--text-color);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 20px;
+        }
+
+        html{
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #111;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto; /* Ajuste para evitar desajustes */
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    gap: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #8BC34A;
+}
+
+
+
+
+
+    /*footer*/
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px 20px;
+  position: relative;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #1abc9c;
+}
+
+.footer-col.contact p,
+.footer-col.links a {
+  margin-bottom: 10px;
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-col.links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 0 10px;
+  flex-wrap: wrap;
+}
+
+.footer-logos img {
+  max-height: 40px;
+}
+
+.go-top {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.go-top a {
+  color: #b0ffaf;
+  text-decoration: none;
+}
+
+.go-top a i {
+  margin-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    margin-bottom: 30px;
+  }
+
+  .go-top {
+    text-align: center;
+  }
+}
+
+
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .intro-text {
+            text-align: center;
+            font-weight: 400;
+            font-size: 1.1rem;
+            margin-bottom: 50px;
+            color: var(--text-light);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-info {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            height: 100%;
+        }
+
+        .contact-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(67, 97, 238, 0.2);
+        }
+
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: var(--secondary);
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-list li:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+
+        .contact-list li i {
+            font-size: 1.3rem;
+            margin-right: 15px;
+            color: var(--primary);
+            width: 40px;
+            height: 40px;
+            background: rgba(67, 97, 238, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .brand-section {
+            background: var(--white);
+            padding: 35px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            margin-bottom: 40px;
+            transition: var(--transition);
+            border-top: 4px solid var(--primary);
+        }
+
+        .brand-section:hover {
+            transform: translateY(-5px);
+        }
+
+        .brand-name {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .brand-email {
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .brand-message {
+            font-weight: 400;
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-top: 0;
+            line-height: 1.7;
+        }
+
+        .send-button {
+            display: block;
+            margin: 0 auto 40px auto;
+            background: var(--primary);
+            color: var(--white);
+            font-weight: 600;
+            border: none;
+            padding: 16px 40px;
+            border-radius: var(--border-radius);
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 8px 20px rgba(67, 97, 238, 0.3);
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .send-button:hover {
+            background: var(--primary-light);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(67, 97, 238, 0.4);
+        }
+
+        .send-button:active {
+            transform: translateY(1px);
+        }
+
+        .send-button i {
+            margin-left: 8px;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            max-width: 700px;
+            margin: 0 auto 50px auto;
+            display: none;
+            position: relative;
+            border-top: 4px solid var(--primary);
+        }
+
+        .contact-form.active {
+            display: block;
+            animation: fadeInForm 0.4s ease forwards;
+        }
+
+        @keyframes fadeInForm {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        .form-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .form-header h3 {
+            margin: 0;
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        .close-form {
+            background: transparent;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: var(--secondary);
+            transition: var(--transition);
+            line-height: 1;
+            padding: 5px;
+        }
+
+        .close-form:hover {
+            color: var(--primary);
+            transform: rotate(90deg);
+        }
+
+        form .form-group {
+            margin-bottom: 25px;
+        }
+
+        form label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--secondary);
+            font-size: 1rem;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid #e0e3f1;
+            border-radius: var(--border-radius-sm);
+            font-size: 1rem;
+            font-family: var(--font-family);
+            transition: var(--transition);
+            resize: vertical;
+            background: #f9faff;
+        }
+
+        form input[type="text"]:focus,
+        form input[type="email"]:focus,
+        form textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+            background: var(--white);
+        }
+
+        form textarea {
+            min-height: 150px;
+            line-height: 1.6;
+        }
+
+        .submit-btn {
+            background: var(--primary);
+            color: var(--white);
+            font-weight: 600;
+            border: none;
+            padding: 16px 32px;
+            border-radius: var(--border-radius);
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 8px 20px rgba(67, 97, 238, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background: var(--primary-light);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(67, 97, 238, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(1px);
+        }
+
+        /* Estilos para la lista de mensajes */
+        #messagesList {
+            margin-top: 50px;
+            padding-left: 0;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #messagesList h3 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            text-align: center;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        #messagesList h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        #messagesList li {
+            margin-bottom: 25px;
+            background: var(--white);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(67, 97, 238, 0.1);
+            list-style: none;
+            transition: var(--transition);
+            border-left: 4px solid var(--primary);
+        }
+
+        #messagesList li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(67, 97, 238, 0.15);
+        }
+
+        #messagesList li p {
+            margin: 8px 0;
+            font-size: 1rem;
+            color: var(--secondary);
+        }
+
+        #messagesList li strong {
+            color: var(--primary);
+            font-weight: 600;
+            margin-right: 5px;
+        }
+
+        /* Efectos y animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-form {
+                padding: 25px;
+            }
+            
+            .brand-section, .contact-info {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El hormiguero: Tienda de Hormigas Online</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/10000739.webp" alt="">
+            <span>El hormiguero</span>
+        </div>
+        <nav>
+            <ul>
+                
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="Hormiguero.html">Hormigueros</a></li>
+                <li><a href="alimentos.html">Alimentos</a></li>
+                <li><a href="hormiga.html">Hormigas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+          
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div class="container">
+        <h1>Contactanos</h1>
+
+        <p class="intro-text">
+            Si estás interesado en tener tu propia colonia de hormigas o aprender más sobre estos increíbles insectos, no dudes en contactarme. 🐜✨
+            
+        </p>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <ul class="contact-list">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>849-375-0619</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>Hormiguero12.@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>República Dominicana-San Fracisco de Macorís</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="brand-section">
+                <div class="brand-name">Recomendaciones</div>
+
+              <h5><p class="brand-message">Si tienes una surgereciones o comentario por favor hacer clic en el botón de abajo </p></h5>
+            </div>
+        </div>
+
+        <button class="send-button" id="showFormBtn">
+            Enviar Mensaje <i class="fas fa-paper-plane"></i>
+        </button>
+
+ <!-- Formulario con FormSubmit -->
+<div class="contact-form" id="contactForm">
+    <div class="form-header">
+        <h3>Envíanos tu mensaje</h3>
+        <button class="close-form" id="closeFormBtn">&times;</button>
+    </div>
+    <form action="https://formsubmit.co/costepatricio@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="contacto.html">
+        <input type="hidden" name="_captcha" value="false">
+        
+        <div class="form-group">
+            <label for="nombre">Nombre</label> 
+            <input type="text" id="nombre" name="name" required />
+        </div>
+        <div class="form-group">
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="email" required />
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">
+            Enviar <i class="fas fa-paper-plane"></i>
+        </button>
+    </form>
+</div>
+
+        <!-- Lista de mensajes -->
+        <ul id="messagesList">
+            <h3>Mensajes Recibidos</h3>
+        </ul>
+    </div>
+
+    <!-- Footer (si aún no está incluido en tu HTML completo) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col contact">
+                <p>Contacto: Hormiguero12.@gmail.com</p>
+                <p>Tel: 849-375-0619</p>
+            </div>
+            <div class="footer-col links">
+                <a href="#">Inicio</a>
+                <a href="#">Tienda</a>
+                <a href="#">Alimentos</a>
+                <a href="#">Hormigas</a>
+            </div>
+            <div class="footer-col social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="go-top">
+            <a href="#"><i class="fas fa-chevron-up"></i> Volver arriba</a>
+        </div>
+    </footer>
+
+    <!-- Script funcional -->
+    <script>
+        const showFormBtn = document.getElementById('showFormBtn');
+        const contactForm = document.getElementById('contactForm');
+        const closeFormBtn = document.getElementById('closeFormBtn');
+        const formularioContacto = document.getElementById('formularioContacto');
+        const messagesList = document.getElementById('messagesList');
+
+        showFormBtn.addEventListener('click', () => {
+            contactForm.classList.add('active');
+        });
+
+        closeFormBtn.addEventListener('click', () => {
+            contactForm.classList.remove('active');
+        });
+
+        function cargarMensajes() {
+            const mensajes = JSON.parse(localStorage.getItem('mensajes')) || [];
+            messagesList.innerHTML = '<h3>Mensajes Recibidos</h3>';
+            mensajes.forEach(mensaje => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <p><strong>Nombre:</strong> ${mensaje.nombre}</p>
+                    <p><strong>Correo:</strong> ${mensaje.correo}</p>
+                    <p><strong>Mensaje:</strong> ${mensaje.mensaje}</p>
+                `;
+                messagesList.appendChild(li);
+            });
+        }
+
+        formularioContacto.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const correo = document.getElementById('correo').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            const nuevoMensaje = { nombre, correo, mensaje };
+
+            const mensajes = JSON.parse(localStorage.getItem('mensajes')) || [];
+            mensajes.push(nuevoMensaje);
+            localStorage.setItem('mensajes', JSON.stringify(mensajes));
+
+            formularioContacto.reset();
+            contactForm.classList.remove('active');
+            cargarMensajes();
+        });
+
+        // Cargar mensajes al inicio
+        cargarMensajes();
+    </script>
+</body>
+</html>

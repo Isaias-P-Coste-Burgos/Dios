@@ -153,7 +153,7 @@ main {
     padding: 40px;
     border-radius: 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s aese;
+    transition: transform 0.3s ease;
 }
 .product:hover{
   transform: scale(1.1);
